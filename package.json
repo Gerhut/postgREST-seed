@@ -1,0 +1,27 @@
+{
+  "name": "postgREST-seed",
+  "version": "0.0.0",
+  "description": "RESTful seed with postgreSQL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gerhut/postgREST-seed.git"
+  },
+  "keywords": [
+    "restful",
+    "postgreSQL"
+  ],
+  "author": "Gerhut <Gerhut@GMail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gerhut/postgREST-seed/issues"
+  },
+  "homepage": "https://github.com/Gerhut/postgREST-seed",
+  "dependencies": {
+    "pg": "^3.4.0",
+    "restify": "^2.8.1"
+  }
+}
