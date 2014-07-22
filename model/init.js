@@ -14,7 +14,7 @@ exports.init = function (force, callback) {
   force = !!force
 
   function create(created) {
-    query('CREATE TABLE ' + self.name + ' (' + self.toCreateString() + ');', function (err, result) {
+    query('CREATE TABLE ' + self.name + ' (' + self.toString() + ');', function (err, result) {
       if (err)
         return callback(err)
       else
@@ -22,10 +22,10 @@ exports.init = function (force, callback) {
     })
   }
 
-  query('SELECT * FROM [' + self.name + '] WHERE false;', function (err, result) {
+  query('SELECT * FROM ' + self.name + ' WHERE false;', function (err, result) {
     if (err == null) { // table exists
       if (force) {
-        query('DROP TABLE [' + self.name + '];', function (err, result) {
+        query('DROP TABLE ' + self.name + ';', function (err, result) {
           if (err)
             return callback(err)
 

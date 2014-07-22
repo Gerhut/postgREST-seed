@@ -1,4 +1,7 @@
+var Model = require('./index')
+
 module.exports = function (struct) {
+  this.struct = {}
   for (var name in struct) {
     var value = struct[name]
     

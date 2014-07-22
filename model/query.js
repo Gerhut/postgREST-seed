@@ -3,9 +3,10 @@ var configure = require('../configure')
 
 var slice = Array.prototype.slice
 
-module.export = function () {
+module.exports = function () {
   var query = slice.call(arguments)
   var callback = query.pop()
+  console.log(query)
   pg.connect(configure.database, function (err, client, done) {
     if (err)
       return callback(err)
