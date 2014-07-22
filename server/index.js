@@ -5,5 +5,6 @@ var server = restify.createServer({ name: configure.name })
 
 require('./plugins')(server)
 require('./urls')(server)
+require('./debug')(server)
 
 module.exports = server
