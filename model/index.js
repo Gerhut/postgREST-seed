@@ -2,6 +2,7 @@ var compile = require('./compile')
 var init = require('./init')
 var convert = require('./convert')
 var operation = require('./operation')
+var restful = require('./restful')
 
 function Model(name, struct) {
   this.name = name
@@ -10,7 +11,7 @@ function Model(name, struct) {
 }
 
 
-[init, convert, operation].forEach(function (plugin) {
+[init, convert, operation, restful].forEach(function (plugin) {
   for (var funcname in plugin) {
     Model.prototype[funcname] = plugin[funcname]
   }
