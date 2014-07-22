@@ -1,6 +1,6 @@
 {
   "name": "postgREST",
-  "database": "postgres://username:password@localhost/postgREST",
+  "database": "postgres://postgres@localhost/postgREST",
   "port": 3000,
   "bodyLimit": 1048576
 }
