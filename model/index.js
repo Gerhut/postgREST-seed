@@ -1,4 +1,3 @@
-var query = require('./query')
 var compile = require('./compile')
 var init = require('./init')
 var convert = require('./convert')

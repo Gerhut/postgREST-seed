@@ -1,3 +1,4 @@
+var query = require('./query')
 
 /**
  * callback: function(err, result)

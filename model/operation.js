@@ -1,3 +1,5 @@
+var query = require('./query')
+
 exports.get = function (key, callback) {
   if (typeof key === 'function') {
     callback = key
