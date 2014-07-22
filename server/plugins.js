@@ -5,7 +5,7 @@ module.exports = function(server) {
   server.use([
     restify.acceptParser(server.acceptable),
     restify.authorizationParser(),
-    restify.queryParser(),
+    restify.queryParser({mapParams: false}),
     restify.gzipResponse(),
     restify.bodyParser({ maxBodySize: configure.bodyLimit })
   ])
