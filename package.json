@@ -4,7 +4,7 @@
   "description": "RESTful seed with postgreSQL",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,11 @@
   },
   "homepage": "https://github.com/Gerhut/postgREST-seed",
   "dependencies": {
-    "pg": "^3.4.0",
-    "restify": "^2.8.1"
+    "orm": "^2.1.16",
+    "restify": "^2.8.1",
+    "pg": "~1.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^1.20.1"
   }
 }
