@@ -22,6 +22,7 @@
   "homepage": "https://github.com/Gerhut/postgREST-seed",
   "dependencies": {
     "bunyan": "^0.23.1",
+    "lodash": "^2.4.1",
     "orm": "^2.1.16",
     "pg": "~1.0.0",
     "restify": "^2.8.1"
