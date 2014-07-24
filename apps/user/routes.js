@@ -17,7 +17,7 @@ function authorization(minAccess) {
         }
       }
 
-      if (result.password !== req.authorization.basic.password) {
+      if (!result.valid(req.authorization.basic.password)) {
         return next(new restify.UnauthorizedError('Invalid password'))
       }
 
