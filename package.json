@@ -21,13 +21,13 @@
   },
   "homepage": "https://github.com/Gerhut/postgREST-seed",
   "dependencies": {
-    "bunyan": "^0.23.1",
-    "lodash": "^2.4.1",
-    "orm": "^2.1.16",
-    "pg": "~1.0.0",
-    "restify": "^2.8.1"
+    "bunyan": "^1.8.10",
+    "lodash": "^4.17.4",
+    "orm": "^3.2.3",
+    "pg": "~6.1.5",
+    "restify": "^4.3.0"
   },
   "devDependencies": {
-    "mocha": "^1.20.1"
+    "mocha": "^3.3.0"
   }
 }
